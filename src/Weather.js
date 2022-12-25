@@ -38,9 +38,6 @@ export default function Weather(props) {
     return (
       <div className="weather">
         <div className="container">
-          <button type="button" className="btn btn-primary">
-            Primary
-          </button>
           <form onSubmit={handleSubmit} className="weatherForm">
             <input
               onChange={handleCityChange}
