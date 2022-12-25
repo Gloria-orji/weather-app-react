@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          <a href="https://github.com/Gloria-orji/weather-react">
+          <a href="https://github.com/Gloria-orji/weather-app-react">
             opensource on GitHub
           </a>
           and
