@@ -17,7 +17,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      iconUrl: `https://openweathermap.org/img/wn/10d@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
   function search() {
@@ -38,7 +38,7 @@ export default function Weather(props) {
     return (
       <div className="weather">
         <div className="container">
-          <button type="button" class="btn btn-primary">
+          <button type="button" className="btn btn-primary">
             Primary
           </button>
           <form onSubmit={handleSubmit} className="weatherForm">
